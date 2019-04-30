@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head xmlns:th="http://www.thymeleaf.org">
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<p th:text="${map.a}">a</p>
+	<p th:text="${map.b}">b</p>
+	<p th:text="${map.c}">c</p>
+	<div th:each="file:${list}">
+		<img alt="图片" src="" th:src="@{'upload/'+${file}}" width="200px" height="100px">
+	    <a href="#" th:href="@{'Download/'+${file}}">下载</a>
+	</div>
+</body>
+</html>
