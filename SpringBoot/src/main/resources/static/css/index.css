@@ -1,0 +1,10 @@
+p{
+	font-size: 20px;
+	color: gray;
+}
+a{
+	color: black;
+}
+a:hover {
+	color: blue;
+}
